@@ -5,11 +5,11 @@
 </ion-header>
 
 <ion-content class="ion-padding">
-  <strong>Take a brief to understand the app</strong>
+  <strong>Take a brief to understand the app</strong><br><br>
   <img src="../../assets/images/intro.jpg" />
   <ion-button id="open-modal" expand="block">Got it.</ion-button>
 
-  <ion-modal #modal trigger="open-modal">
+  <ion-modal style="padding-left: 2%; padding-right: 2%;" #modal trigger="open-modal">
     <ng-template>
       <ion-content>
         <ion-toolbar>
@@ -19,8 +19,35 @@
           </ion-buttons>
         </ion-toolbar>
       
-             <ion-button expand="block">Customer</ion-button>
-             <ion-button expand="block">Shopkeeper</ion-button>
+        <ion-list>
+          <!-- user model -->
+          <a href="test" style="text-decoration: none; color:black;">
+          <ion-item>
+            <ion-avatar slot="start">
+              <ion-img src="../../assets/images/man.png"></ion-img>
+            </ion-avatar>
+
+            <ion-label>
+              
+        
+              Customer
+            </ion-label>
+          </ion-item></a>
+         <!-- shop keeper model -->
+          <a href="test" style="text-decoration: none; color:black;">
+            <ion-item>
+              <ion-avatar slot="start">
+                <ion-img src="../../assets/images/shops.png"></ion-img>
+              </ion-avatar>
+  
+              <ion-label>
+                
+          
+                Shop Keeper
+              </ion-label>
+            </ion-item></a>
+        
+        </ion-list>
       </ion-content>
     </ng-template>
   </ion-modal>
