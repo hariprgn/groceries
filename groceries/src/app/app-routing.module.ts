@@ -12,9 +12,11 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'test',
-    loadChildren: () => import('./test/test.module').then( m => m.TestPageModule)
+    path: 'ulogin',
+    loadChildren: () => import('./ulogin/ulogin.module').then( m => m.UloginPageModule)
   },
+
+ 
 ];
 
 @NgModule({
