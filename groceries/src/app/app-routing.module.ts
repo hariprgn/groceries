@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'ulogin',
     loadChildren: () => import('./ulogin/ulogin.module').then( m => m.UloginPageModule)
   },
+  {
+    path: 'udashboard',
+    loadChildren: () => import('./udashboard/udashboard.module').then( m => m.UdashboardPageModule)
+  },
 
  
 ];
