@@ -2,7 +2,9 @@
 
 <ion-content>
 <div style="padding-left:2%; padding-right:2%">
-<p id="open-modal">Location</p>
+  <!-- Location part -->
+<p id="open-modal"><ion-icon name="location-sharp"></ion-icon>Location</p>
+
 <ion-modal #modal trigger="open-modal" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]">
   <ng-template>
     <ion-content>
@@ -48,5 +50,65 @@
     </ion-content>
   </ng-template>
 </ion-modal>
+
+<ion-searchbar mode="ios"></ion-searchbar>
+<ion-row class="forecast_container">
+  <ion-col><ion-button>Button</ion-button></ion-col>
+  <ion-col><ion-button>Button</ion-button></ion-col>
+  <ion-col><ion-button>Button</ion-button></ion-col>
+  <ion-col><ion-button>Button</ion-button></ion-col>
+
+  <ion-col><ion-button>Button</ion-button></ion-col>
+  <ion-col><ion-button>Button</ion-button></ion-col>
+  <ion-col><ion-button>Button</ion-button></ion-col>
+  <ion-col><ion-button>Button</ion-button></ion-col>
+  <ion-col><ion-button>Button</ion-button></ion-col>
+
+  </ion-row>
+  <!-- Location part end -->
+
+  <!-- Near by shop -->
+  <p>Nearby shops for you</p>
+  <ion-row class="forecast_container">
+    <ion-col><ion-card >
+      <ion-item>
+        <ion-icon name="pin" slot="start"></ion-icon>
+        <ion-label>Shop name</ion-label>
+       
+      </ion-item>
+    
+      <ion-card-content>
+        This is content, without any paragraph or header tags,
+        within an ion-card-content element.
+      </ion-card-content>
+    </ion-card></ion-col>
+
+    <ion-col><ion-card >
+      <ion-item>
+        <ion-icon name="pin" slot="start"></ion-icon>
+        <ion-label>Shop name</ion-label>
+       
+      </ion-item>
+    
+      <ion-card-content>
+        This is content, without any paragraph or header tags,
+        within an ion-card-content element.
+      </ion-card-content>
+    </ion-card></ion-col>
+    <ion-col><ion-card >
+      <ion-item>
+        <ion-icon name="pin" slot="start"></ion-icon>
+        <ion-label>Shop name</ion-label>
+       
+      </ion-item>
+    
+      <ion-card-content>
+        This is content, without any paragraph or header tags,
+        within an ion-card-content element.
+      </ion-card-content>
+    </ion-card></ion-col>
+    </ion-row>
+  
+  <!-- near by shop end -->
 </div>
 </ion-content>
