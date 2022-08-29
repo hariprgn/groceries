@@ -1,18 +1,25 @@
 
+<ion-header>
 
+  <div style="padding-left:2%; padding-right:2%">
+    <!-- Location part -->
+  <ion-row>
+  <!-- <ion-col></ion-col>
+  <ion-col></ion-col> -->
+  <ion-col size="7">
+    <p id="open-modal"><ion-icon name="location-sharp"></ion-icon>Location</p>
+  </ion-col>
+  <ion-col size="1" offset="4">
+   <a href="uprofile"><ion-img src="../../assets/images/carrot.png" style="height:50px; padding-top:10%"></ion-img></a>
+  </ion-col>
+  </ion-row>
+  <ion-searchbar style="top:-10px;" mode="ios"></ion-searchbar>
+</div>
+</ion-header>
 <ion-content>
 <div style="padding-left:2%; padding-right:2%">
   <!-- Location part -->
-<ion-row>
-<!-- <ion-col></ion-col>
-<ion-col></ion-col> -->
-<ion-col size="7">
-  <p id="open-modal"><ion-icon name="location-sharp"></ion-icon>Location</p>
-</ion-col>
-<ion-col size="1" offset="4">
- <a href="uprofile"><ion-img src="../../assets/images/carrot.png" style="height:50px; padding-top:10%"></ion-img></a>
-</ion-col>
-</ion-row>
+
 
 <ion-modal #modal trigger="open-modal" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]">
   <ng-template>
@@ -60,7 +67,7 @@
   </ng-template>
 </ion-modal>
 
-<ion-searchbar mode="ios"></ion-searchbar>
+
 <ion-row class="forecast_container">
   <ion-col><ion-button>Button</ion-button></ion-col>
   <ion-col><ion-button>Button</ion-button></ion-col>
