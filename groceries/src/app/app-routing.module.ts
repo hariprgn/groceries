@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'udashboard',
     loadChildren: () => import('./udashboard/udashboard.module').then( m => m.UdashboardPageModule)
   },
+  {
+    path: 'uprofile',
+    loadChildren: () => import('./uprofile/uprofile.module').then( m => m.UprofilePageModule)
+  },
 
  
 ];
