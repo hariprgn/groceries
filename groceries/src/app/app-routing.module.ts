@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'uprofile',
     loadChildren: () => import('./uprofile/uprofile.module').then( m => m.UprofilePageModule)
   },
+  {
+    path: 'shoppage',
+    loadChildren: () => import('./shoppage/shoppage.module').then( m => m.ShoppagePageModule)
+  },
 
  
 ];
